@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --primary-h: 202;
+    --primary-s: 95%;
+    --primary-l: 41%;
+    --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+    --primary-darker: hsl(var(--primary-h), var(--primary-s), calc( var(--primary-l) - 20%));
+    --primary-light: hsl(var(--primary-h), var(--primary-s), calc( var(--primary-l) + 20%));
+
+
+    body {
+        background-color: var(--primary-darker);
+        font-family: 'Inter', sans-serif;
+    }
+}
