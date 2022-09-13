@@ -9,13 +9,17 @@ interface props {
 const AppTitle = ( {children, component, color} : props ) => {
     
     return (
-        <>
-        </>
+        <AppTitleWrapper>
+            {children}
+        </AppTitleWrapper>
     )
 }
 
 const AppTitleWrapper = styled.h1`
-    
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--primary-darker);
+    margin-bottom: 20px;
 `
 
 export default AppTitle

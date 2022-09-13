@@ -1,6 +1,6 @@
 import { useState } from "react"
 import styled from "styled-components"
-import { VscGraph, VscExtensions, VscSignOut, VscGear, VscFolderOpened, VscMail, VscSymbolOperator } from "react-icons/vsc";
+import { VscGraph, VscExtensions, VscSignOut, VscGear, VscFolderOpened, VscLocation, VscSymbolOperator } from "react-icons/vsc";
 import AppMenuFooter from "./AppMenuFooter/AppMenuFooter"
 import AppMenuHeader from "./AppMenuHeader/AppMenuHeader"
 import AppMenuLink from "./AppMenuLink/AppMenuLink"
@@ -19,9 +19,9 @@ const AppMenu = () => {
             icon: <VscSymbolOperator/>
         },
         {
-            name: 'Tela 2',
-            path: '/tela2',
-            icon: <VscExtensions/>
+            name: 'Gráficos de mapa',
+            path: '/map-chart',
+            icon: <VscLocation/>
         },
         {
             name: 'Tela 3',
@@ -31,7 +31,7 @@ const AppMenu = () => {
         {
             name: 'Tela 4',
             path: '/tela4',
-            icon: <VscMail/>
+            icon: <VscExtensions/>
         },
     ]
 

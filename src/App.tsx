@@ -6,6 +6,7 @@ import AppMenu from './components/AppMenu/AppMenu'
 import CalculadoraEstatistica from './pages/CalculadoraEstatistica/CalculadoraEstatistica.page'
 import Home from './pages/Home/Home.page'
 import LoginPage from './pages/Login/Login.page'
+import MapChart from './pages/MapChart/MapChart.page'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='calculadora' element={<CalculadoraEstatistica/>}></Route>
+          <Route path='map-chart' element={<MapChart/>}></Route>
           <Route path='/logout' element={<LoginPage/>}></Route>
         </Routes>
       </main>
@@ -35,6 +37,6 @@ const AppWrapper = styled.section`
     border-radius: 20px 0 0 20px;
     height: 100vh;
     overflow: scroll;
-    padding: 20px;
+    padding: 50px;
   }
 `;
