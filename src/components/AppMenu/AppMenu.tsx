@@ -1,6 +1,6 @@
 import { useState } from "react"
 import styled from "styled-components"
-import { VscGraph, VscExtensions, VscSignOut, VscGear, VscFolderOpened, VscLocation, VscSymbolOperator } from "react-icons/vsc";
+import { VscGraph, VscExtensions, VscSignOut, VscGear, VscFolderOpened, VscLocation, VscSymbolOperator, VscFile } from "react-icons/vsc";
 import AppMenuFooter from "./AppMenuFooter/AppMenuFooter"
 import AppMenuHeader from "./AppMenuHeader/AppMenuHeader"
 import AppMenuLink from "./AppMenuLink/AppMenuLink"
@@ -22,6 +22,11 @@ const AppMenu = () => {
             name: 'Gráficos de mapa',
             path: '/map-chart',
             icon: <VscLocation/>
+        },
+        {
+            name: 'Documento',
+            path: '/gerador-documento',
+            icon: <VscFile/>
         },
         {
             name: 'Tela 3',
